@@ -11,10 +11,16 @@ namespace SyncfusionPoC
 {
     class TestRunner
     {
+        private readonly ILogger Log;
+        private readonly string PathToFolder;
+        private readonly string PreviewFolderPath;
+        private readonly PictureBox Picture;
+
         public void Run()
         {
-            
+            CreatePreviews(PathToFolder, Picture, PreviewFolderPath);
         }
+
         private static string CreateFolder(string fodlerName, string pathToFolder, string time)
         {
             var pathToNewFolder = Path.Combine(pathToFolder, $"{fodlerName}-{time}");
@@ -30,15 +36,15 @@ namespace SyncfusionPoC
             previewFolderPath = CreateFolder("previews", pathToSrcFolder, time);
             logFolderPath = CreateFolder("logs", pathToSrcFolder, time);
         }
-        
-        private readonly ILogger Log;
 
         public TestRunner(string pathToFolder, PictureBox pictureBox)
         {
-            var time = DateTime.Now.ToString("dd-MM-yyyy_hh-mm-ss");
+            PathToFolder = pathToFolder;
+            Picture = pictureBox;
+            var time = DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss");
             CreateFolders(pathToFolder, time, out var logFolderPath, out var previewFolderPath);
+            PreviewFolderPath = previewFolderPath;
             Log = new Logger.Logger(logFolderPath, time);
-            CreatePreviews(pathToFolder, pictureBox, previewFolderPath);
         }
 
         public void CreatePreviews(string pathToFolder, PictureBox pictureBox, string previewFolderPath)

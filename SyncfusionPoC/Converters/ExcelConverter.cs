@@ -21,7 +21,7 @@ namespace SyncfusionPoC.Converters
                 IWorkbook workbook = application.Workbooks.Open(filePath, ExcelOpenType.Automatic);
                 IWorksheet sheet = workbook.Worksheets[0];
 
-                image = sheet.ConvertToImage(1, 1, 50, 30);
+                image = sheet.ConvertToImage(1, 1, 42, 10);
             }
             return image;
         }
