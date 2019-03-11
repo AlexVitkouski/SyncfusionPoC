@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
-using SyncfusionPoC.Converter;
+using SyncfusionPoC.Converters;
 
 namespace SyncfusionPoC.Converters
 {

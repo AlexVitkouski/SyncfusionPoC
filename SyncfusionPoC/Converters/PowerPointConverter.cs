@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Syncfusion.Presentation;
-using SyncfusionPoC.Converter;
 
 namespace SyncfusionPoC.Converters
 {

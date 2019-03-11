@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SyncfusionPoC.Converter
+namespace SyncfusionPoC.Converters
 {
     interface IConverter
     {

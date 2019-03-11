@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Syncfusion.ExcelChartToImageConverter;
 using Syncfusion.XlsIO;
-using SyncfusionPoC.Converter;
 
 namespace SyncfusionPoC.Converters
 {
@@ -20,7 +21,6 @@ namespace SyncfusionPoC.Converters
                 application.DefaultVersion = ExcelVersion.Excel2016;
                 IWorkbook workbook = application.Workbooks.Open(filePath, ExcelOpenType.Automatic);
                 IWorksheet sheet = workbook.Worksheets[0];
-
                 image = sheet.ConvertToImage(1, 1, 42, 10);
             }
             return image;

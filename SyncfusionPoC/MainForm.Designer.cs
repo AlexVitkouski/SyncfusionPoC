@@ -35,7 +35,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(85, 271);
+            this.btnStart.Location = new System.Drawing.Point(76, 394);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(214, 56);
             this.btnStart.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(374, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(424, 588);
+            this.pictureBox1.Size = new System.Drawing.Size(612, 792);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 612);
+            this.ClientSize = new System.Drawing.Size(1034, 825);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnStart);
             this.Name = "MainForm";
