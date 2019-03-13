@@ -98,7 +98,7 @@ namespace SyncfusionPoC
 
         private static void SavePreview(Image image, string srcFileName, string previewFolderPath)
         {
-            var previewFileName = $"{Path.GetFileNameWithoutExtension(srcFileName)}.png";
+            var previewFileName = $"{Path.GetFileName(srcFileName)}.png";
             var previewPath = Path.Combine(previewFolderPath, previewFileName);
             image.Save(previewPath, System.Drawing.Imaging.ImageFormat.Png);
         }

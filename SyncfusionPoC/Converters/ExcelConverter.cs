@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Syncfusion.ExcelChartToImageConverter;
 using Syncfusion.XlsIO;
 
 namespace SyncfusionPoC.Converters

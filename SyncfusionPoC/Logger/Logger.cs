@@ -35,6 +35,7 @@ namespace SyncfusionPoC.Logger
             SetLogsPath(logFolderPath, startTime, out string logPath, out string errorLogPath);
             InfoLog = logPath;
             ErrorLog = errorLogPath;
+            AddHeaders();
         }
         public void LogError(string message)
         {
